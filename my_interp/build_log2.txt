@@ -1,0 +1,169 @@
+running install
+running bdist_egg
+running egg_info
+creating my_interp.egg-info
+writing my_interp.egg-info/PKG-INFO
+writing dependency_links to my_interp.egg-info/dependency_links.txt
+writing top-level names to my_interp.egg-info/top_level.txt
+writing manifest file 'my_interp.egg-info/SOURCES.txt'
+reading manifest file 'my_interp.egg-info/SOURCES.txt'
+writing manifest file 'my_interp.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-x86_64/egg
+running install_lib
+running build_ext
+building 'my_interp' extension
+creating /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build
+creating /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  setuptools.SetuptoolsDeprecationWarning,
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/setuptools/command/easy_install.py:147: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  EasyInstallDeprecationWarning,
+Emitting ninja build file /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/2] /usr/bin/g++-9 -MMD -MF /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/my_interp_cuda.o.d -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/TH -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/avl/anaconda3/envs/Ultra/include/python3.7m -c -c /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp -o /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/my_interp_cuda.o -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=my_interp -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/core/Device.h:5,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:11,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/extension.h:4,
+                 from /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:1:
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp: In function ‘at::Tensor run(at::Tensor, at::Tensor, int)’:
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:15:41: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+   15 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+      |                                         ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:264:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+  264 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+      |                                       ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:284:34: note: in expansion of macro ‘C10_UNLIKELY’
+  284 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+      |                                  ^~~~~~~~~~~~
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:336:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+  336 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:631:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+  631 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:15:23: note: in expansion of macro ‘AT_ASSERTM’
+   15 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+      |                       ^~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:17:24: note: in expansion of macro ‘CHECK_CUDA’
+   17 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+      |                        ^~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:21:3: note: in expansion of macro ‘CHECK_INPUT’
+   21 |   CHECK_INPUT(input);
+      |   ^~~~~~~~~~~
+In file included from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/extension.h:4,
+                 from /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:1:
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:216:30: note: declared here
+  216 |   DeprecatedTypeProperties & type() const {
+      |                              ^~~~
+In file included from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/core/Device.h:5,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:11,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/extension.h:4,
+                 from /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:1:
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:15:41: warning: ‘at::DeprecatedTypeProperties& at::Tensor::type() const’ is deprecated: Tensor.type() is deprecated. Instead use Tensor.options(), which in many cases (e.g. in a constructor) is a drop-in replacement. If you were using data from type(), that is now available from Tensor itself, so instead of tensor.type().scalar_type(), use tensor.scalar_type() instead and instead of tensor.type().backend() use tensor.device(). [-Wdeprecated-declarations]
+   15 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+      |                                         ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:264:39: note: in definition of macro ‘C10_EXPAND_MSVC_WORKAROUND’
+  264 | #define C10_EXPAND_MSVC_WORKAROUND(x) x
+      |                                       ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:284:34: note: in expansion of macro ‘C10_UNLIKELY’
+  284 | #define C10_UNLIKELY_OR_CONST(e) C10_UNLIKELY(e)
+      |                                  ^~~~~~~~~~~~
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:336:7: note: in expansion of macro ‘C10_UNLIKELY_OR_CONST’
+  336 |   if (C10_UNLIKELY_OR_CONST(!(cond))) {                                          \
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/c10/util/Exception.h:631:32: note: in expansion of macro ‘TORCH_INTERNAL_ASSERT’
+  631 |     C10_EXPAND_MSVC_WORKAROUND(TORCH_INTERNAL_ASSERT(cond, __VA_ARGS__)); \
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:15:23: note: in expansion of macro ‘AT_ASSERTM’
+   15 | #define CHECK_CUDA(x) AT_ASSERTM(x.type().is_cuda(), #x " must be a CUDA tensor")
+      |                       ^~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:17:24: note: in expansion of macro ‘CHECK_CUDA’
+   17 | #define CHECK_INPUT(x) CHECK_CUDA(x); CHECK_CONTIGUOUS(x)
+      |                        ^~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:22:3: note: in expansion of macro ‘CHECK_INPUT’
+   22 |   CHECK_INPUT(interp_loc);
+      |   ^~~~~~~~~~~
+In file included from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/Tensor.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/function_hook.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/cpp_hook.h:2,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/variable.h:6,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/autograd/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/autograd.h:3,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include/torch/all.h:7,
+                 from /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/extension.h:4,
+                 from /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda.cpp:1:
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:216:30: note: declared here
+  216 |   DeprecatedTypeProperties & type() const {
+      |                              ^~~~
+[2/2] /usr/local/cuda/bin/nvcc  -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/TH -I/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/avl/anaconda3/envs/Ultra/include/python3.7m -c -c /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda_kernel.cu -o /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/my_interp_cuda_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=my_interp -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -ccbin /usr/bin/gcc-9 -std=c++14
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda_kernel.cu: In function ‘at::Tensor my_interp_cuda(at::Tensor, at::Tensor, int)’:
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda_kernel.cu:88:156: warning: ‘at::GenericPackedTensorAccessor<T, N, PtrTraits, index_t> at::Tensor::packed_accessor() const & [with T = float; long unsigned int N = 4; PtrTraits = at::RestrictPtrTraits; index_t = long unsigned int]’ is deprecated: packed_accessor is deprecated, use packed_accessor32 or packed_accessor64 instead [-Wdeprecated-declarations]
+   88 |     my_interp_cuda_kernel<<<blocks, threads>>>(
+      |                                                                                                                                                            ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   GenericPackedTensorAccessor<T,N,PtrTraits,index_t> packed_accessor() const & {
+      | ^ ~~~~~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda_kernel.cu:88:238: warning: ‘at::GenericPackedTensorAccessor<T, N, PtrTraits, index_t> at::Tensor::packed_accessor() const & [with T = float; long unsigned int N = 1; PtrTraits = at::RestrictPtrTraits; index_t = long unsigned int]’ is deprecated: packed_accessor is deprecated, use packed_accessor32 or packed_accessor64 instead [-Wdeprecated-declarations]
+   88 |     my_interp_cuda_kernel<<<blocks, threads>>>(
+      |                                                                                                                                                                                                                                              ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   GenericPackedTensorAccessor<T,N,PtrTraits,index_t> packed_accessor() const & {
+      | ^ ~~~~~~~~~~~~~
+/home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/my_interp_cuda_kernel.cu:88:313: warning: ‘at::GenericPackedTensorAccessor<T, N, PtrTraits, index_t> at::Tensor::packed_accessor() const & [with T = float; long unsigned int N = 4; PtrTraits = at::RestrictPtrTraits; index_t = long unsigned int]’ is deprecated: packed_accessor is deprecated, use packed_accessor32 or packed_accessor64 instead [-Wdeprecated-declarations]
+   88 |     my_interp_cuda_kernel<<<blocks, threads>>>(
+      |                                                                                                                                                                                                                                                                                                                         ^
+/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/include/ATen/core/TensorBody.h:247:1: note: declared here
+  247 |   GenericPackedTensorAccessor<T,N,PtrTraits,index_t> packed_accessor() const & {
+      | ^ ~~~~~~~~~~~~~
+creating build/lib.linux-x86_64-cpython-37
+/usr/bin/g++-9 -pthread -shared -B /home/avl/anaconda3/envs/Ultra/compiler_compat -L/home/avl/anaconda3/envs/Ultra/lib -Wl,-rpath=/home/avl/anaconda3/envs/Ultra/lib -Wl,--no-as-needed -Wl,--sysroot=/ /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/my_interp_cuda.o /home/avl/LEEEEEEEEE/Ultra-Fast-Lane-Detection-V2/my_interp/build/temp.linux-x86_64-cpython-37/my_interp_cuda_kernel.o -L/home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda_cu -ltorch_cuda_cpp -o build/lib.linux-x86_64-cpython-37/my_interp.cpython-37m-x86_64-linux-gnu.so
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+copying build/lib.linux-x86_64-cpython-37/my_interp.cpython-37m-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/egg
+creating stub loader for my_interp.cpython-37m-x86_64-linux-gnu.so
+byte-compiling build/bdist.linux-x86_64/egg/my_interp.py to my_interp.cpython-37.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying my_interp.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying my_interp.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying my_interp.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying my_interp.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+writing build/bdist.linux-x86_64/egg/EGG-INFO/native_libs.txt
+zip_safe flag not set; analyzing archive contents...
+__pycache__.my_interp.cpython-37: module references __file__
+creating 'dist/my_interp-0.0.0-py3.7-linux-x86_64.egg' and adding 'build/bdist.linux-x86_64/egg' to it
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+Processing my_interp-0.0.0-py3.7-linux-x86_64.egg
+creating /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/my_interp-0.0.0-py3.7-linux-x86_64.egg
+Extracting my_interp-0.0.0-py3.7-linux-x86_64.egg to /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages
+Adding my-interp 0.0.0 to easy-install.pth file
+
+Installed /home/avl/anaconda3/envs/Ultra/lib/python3.7/site-packages/my_interp-0.0.0-py3.7-linux-x86_64.egg
+Processing dependencies for my-interp==0.0.0
+Finished processing dependencies for my-interp==0.0.0
